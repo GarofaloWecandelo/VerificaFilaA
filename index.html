@@ -7,10 +7,10 @@
     <title>Verifica</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="start()">
     <script src="./js/main.js" defer></script>
 
-    <form>
+
         <label>Nominativo: <input id="nominativo" type="text"></label><br>
         <label>Sesso: 
             <select id="sesso">
@@ -29,23 +29,26 @@
                 <option value="4D-IA">4D-IA</option>
             </select>
         </label><br>
-        <label>Punteggio: <input id="punteggio"></label>
+        <label>Punteggio: <input id="punteggio" type="number" min="1" max="40" placeholder="min = 1 max = 40"></label>
 
         <button onclick="inserisci()">Inserisci</button>
-    </form>
+
         <hr>
 
-    <form>
+
         <p>Filtra dati per: </p>
+
         <label>Sesso: 
-            <select id="sesso">
+            <select id="filtroSesso">
+                <option value="null"></option>
                 <option value="M">M</option>
                 <option value="F">F</option>
             </select>
         </label>
 
         <label>Classe: 
-            <select id="classe">
+            <select id="filtroClasse">
+                <option value="null"></option>
                 <option value="3A-IA">3A-IA</option>
                 <option value="3B-IA">3B-IA</option>
                 <option value="3C-IA">3C-IA</option>
@@ -57,7 +60,7 @@
         </label>
 
             <button onclick="filtra()">Filtra</button>
-        </form>
+
         <hr>
 
         <table id="tabella">
