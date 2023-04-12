@@ -1,0 +1,9 @@
+label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+table, tr, td, th{
+
+    border: 1px solid black;
+}

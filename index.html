@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifica</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <script src="./js/main.js" defer></script>
+
+    <form>
+        <label>Nominativo: <input id="nominativo" type="text"></label><br>
+        <label>Sesso: 
+            <select id="sesso">
+                <option value="M">M</option>
+                <option value="F">F</option>
+            </select>
+        </label><br>
+        <label>Classe: 
+            <select id="classe">
+                <option value="3A-IA">3A-IA</option>
+                <option value="3B-IA">3B-IA</option>
+                <option value="3C-IA">3C-IA</option>
+                <option value="4A-IA">4A-IA</option>
+                <option value="4B-IA">4B-IA</option>
+                <option value="4C-IA">4C-IA</option>
+                <option value="4D-IA">4D-IA</option>
+            </select>
+        </label><br>
+        <label>Punteggio: <input id="punteggio"></label>
+
+        <button onclick="inserisci()">Inserisci</button>
+    </form>
+        <hr>
+
+    <form>
+        <p>Filtra dati per: </p>
+        <label>Sesso: 
+            <select id="sesso">
+                <option value="M">M</option>
+                <option value="F">F</option>
+            </select>
+        </label>
+
+        <label>Classe: 
+            <select id="classe">
+                <option value="3A-IA">3A-IA</option>
+                <option value="3B-IA">3B-IA</option>
+                <option value="3C-IA">3C-IA</option>
+                <option value="4A-IA">4A-IA</option>
+                <option value="4B-IA">4B-IA</option>
+                <option value="4C-IA">4C-IA</option>
+                <option value="4D-IA">4D-IA</option>
+            </select>
+        </label>
+
+            <button onclick="filtra()">Filtra</button>
+        </form>
+        <hr>
+
+        <table id="tabella">
+            <tr>
+                <th>Nome</th>
+                <th>Sesso</th>
+                <th>Classe</th>
+                <th>Punteggio</th>
+            </tr>
+        </table>
+
+</body>
+</html>
